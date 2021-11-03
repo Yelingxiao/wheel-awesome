@@ -1,0 +1,20 @@
+{
+  "name": "wheel-awesome",
+  "version": "1.0.0",
+  "description": "Handwritten code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yelingxiao/wheel-awesome.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yelingxiao/wheel-awesome/issues"
+  },
+  "homepage": "https://github.com/Yelingxiao/wheel-awesome#readme"
+}
