@@ -4,7 +4,9 @@
   "description": "Handwritten code",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "watch": "jest --watchAll",
+    "coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Yelingxiao/wheel-awesome/issues"
   },
-  "homepage": "https://github.com/Yelingxiao/wheel-awesome#readme"
+  "homepage": "https://github.com/Yelingxiao/wheel-awesome#readme",
+  "devDependencies": {
+    "jest": "^27.3.1"
+  }
 }
