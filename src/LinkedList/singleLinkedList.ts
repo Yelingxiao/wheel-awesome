@@ -66,16 +66,27 @@ class SingleLinkedList {
   }
   // 链表打印
   print(): void {
-    console.log(this.currentNode)
-    while (this.currentNode && this.currentNode.value) {
-      console.log(this.currentNode)
+    while (this.currentNode) {
+      console.log(this.currentNode.value)
       this.currentNode = this.currentNode.next
     }
   }
+  // 反转链表
+  reverse(): ListNodeItem {
+    let pre: ListNodeItem | null = null
+    let next: ListNodeItem | null = null
+    while (this.currentNode) {
+      next = this.currentNode.next
+      this.currentNode.next = pre
+      pre = this.currentNode
+      this.currentNode = next
+    }
+    return pre
+  }
 }
-const list = new SingleLinkedList(4)
+const list = new SingleLinkedList(0)
 list.add(1)
 list.add(2)
 list.add(3)
-console.log(list.print())
+console.log(list.reverse())
 // export default SingleLinkedList
