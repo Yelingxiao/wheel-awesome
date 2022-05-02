@@ -89,4 +89,4 @@ list.add(1)
 list.add(2)
 list.add(3)
 console.log(list.reverse())
-// export default SingleLinkedList
+export default SingleLinkedList
