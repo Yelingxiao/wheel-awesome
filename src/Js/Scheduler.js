@@ -5,14 +5,14 @@ class Scheduler {
   }
   add(promiseCreator) {
     this.task.push(promiseCreator)
-    if (this.task.length <= 2) {
+    if (this.task.length <= this.num) {
       this.run(promiseCreator)
     }
   }
   run(promiseCreator) {
     promiseCreator().then(() => {
-      if (this.task.length > 2) {
-        this.run(this.task[2])
+      if (this.task.length > this.num) {
+        this.run(this.task[this.num])
         this.task.shift()
       }
     })
